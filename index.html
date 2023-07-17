@@ -74,7 +74,7 @@
       let html = `<table class="table table-striped">`;
       html += `<thead style="color:yellow;" ><tr><th> list </th>  <th>scheme Name</th><th>Rate</th><th> Number</th><th>landmark ><th> details  </th><th>location</th></tr></thead>`;
       html += `<tbody>`;
-      for (let i = sheet.length - 1; i > 5; i--) {
+      for (let i = sheet.length - 1; i > 4; i--) {
         html += `<style>p{color:;} 
               h3{display:inline;}
               .box {
@@ -100,10 +100,7 @@
           <td style="color:white;" >${sheet[i][5]}</td>
           <td style="color:white;" >${sheet[i][6]}</td>
           <td style="color:white; background: ;">${sheet[i][7]}</td>
-           <td>
-    <a href="https://api.whatsapp.com/send?phone=${sheet[i][2]}&text=hi" target="_blank">message WhatsApp</a>
-</td>
-
+          
 
         </tr> `;
       }
